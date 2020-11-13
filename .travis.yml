@@ -10,6 +10,8 @@ cache:
   directories:  
     - $HOME/.m2
 
+before_install: cd Back-end
+
 script:
   - mvn test
   - mvn -Dremote.user=$REMOTE_USER -Dremote.password=$REMOTE_PW tomcat7:deploy
