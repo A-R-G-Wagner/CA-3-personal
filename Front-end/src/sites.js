@@ -1,9 +1,9 @@
-export const Site = "http://localhost:8080/jpareststarter";
+export const Site = "http://wagnerdata.dk/jpareststarter";
 
-export const AdminUrlUserCount = "http://localhost:8080/jpareststarter/api/admin/userCount";
+export const AdminUrlUserCount = "http://wagnerdata.dk/jpareststarter/api/admin/userCount";
 
-export const UserUrlUserCount = "http://localhost:8080/jpareststarter/api/user/userCount"
+export const UserUrlUserCount = "http://wagnerdata.dk/jpareststarter/api/user/userCount"
 
-export const DailyFunUrl = "http://localhost:8080/jpareststarter/api/dailyfun";
+export const DailyFunUrl = "http://wagnerdata.dk/jpareststarter/api/dailyfun";
 
-export const HolidaysUrl = "http://localhost:8080/jpareststarter/api/holidays";
+export const HolidaysUrl = "http://wagnerdata.dk/jpareststarter/api/holidays";

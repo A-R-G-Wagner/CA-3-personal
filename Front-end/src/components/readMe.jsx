@@ -19,7 +19,11 @@ const Readme = () => {
           <li>'admin logged-in': 'username': Viser velkomstside med logout knap</li>
           <li>'user logged-in': 'username': Viser velkomstside med logout knap</li>
         </ul>
-
+        <li>Testbrugere er: </li>
+        <ul>
+          <li>username: user, password: userPW </li>
+          <li>username: admin, password: adminPW </li>
+        </ul>
       </ul>
     </>
   );

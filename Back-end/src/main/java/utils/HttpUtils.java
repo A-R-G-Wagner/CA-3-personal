@@ -12,17 +12,20 @@ public class HttpUtils {
         URL url = new URL(_url);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
-        con.setRequestProperty("Accept", "application/json;charset=UTF-8");
-        //con.setRequestProperty("Accept", "application/json");
-        //con.setRequestProperty("User-Agent", "server");
 
-        Scanner scan = new Scanner(con.getInputStream());
+//        con.setRequestProperty("Accept", "application/json;charset=UTF-8");
+//        con.setRequestProperty("Accept", "application/json");
+//        con.setRequestProperty("Accept-Charset", "UTF-8");
+//        con.setRequestProperty("User-Agent", "server");
+
+        Scanner scan = new Scanner(con.getInputStream(), "UTF-8");
         String jsonStr = null;
         if (scan.hasNext()) {
             jsonStr = scan.nextLine();
         }
         scan.close();
         System.out.println("HttpUtils: " + scan);
+        System.out.println("HttpUtils(fetchData): " + jsonStr);
         return jsonStr;
     }
 }
