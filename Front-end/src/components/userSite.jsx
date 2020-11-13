@@ -16,7 +16,7 @@ const UserSite = () => {
             .then((data) => setCount(data))
         }
       >
-        Hente antal bruger
+        Hent antal brugere
       </button>
     </>
   );

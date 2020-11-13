@@ -9,6 +9,7 @@ import facade from "./apiFacade";
 import ValidateRoleSite from "./validateRoleSite";
 import UserSite from "./userSite";
 import AdminSite from "./adminSite";
+import Holidays from "./holiday";
 
 const NavBarIO = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -29,10 +30,12 @@ const Header = (props) => {
   return (
     <>
       <div>
-        <Navbar bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          
           <Navbar.Brand as={Link} to="/">
             CA-3 Gruppe 5
           </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <NavItem href="/">
@@ -82,6 +85,7 @@ const Content = (props) => {
       <Route path="/DailyFun" component={DailyFun} />
       <Route path="/AdminSite" component={AdminSite} />
       <Route path="/UserSite" component={UserSite} />
+      <Route path="/Holidays" component={Holidays} />
       <Route path="/Login">
         <Login setLoggedIn={props.setLoggedIn} loggedIn={props.loggedIn} />
       </Route>
